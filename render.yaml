@@ -6,9 +6,12 @@ services:
     dockerfilePath: Dockerfile
     dockerCommand: ./start.sh
     envVars:
-      - key: EXCHANGE__KEY
+      - key: FREQTRADE__EXCHANGE__KEY
         sync: false
-      - key: EXCHANGE__SECRET
+      - key: FREQTRADE__EXCHANGE__SECRET
         sync: false
-      - key: PAIR_WHITELIST
+      - key: FREQTRADE__EXCHANGE__PAIR_WHITELIST
         value: '["ETH/USD"]'
+      - key: FREQTRADE__PAIRLIST__USE_VOLUME_FILTER
+        value: "false"
+    autoDeploy: true
