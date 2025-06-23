@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: freqtrade-bot
+    plan: free
+    runtime: docker
+    dockerfilePath: Dockerfile
+    dockerCommand: ./start.sh
+    envVars:
+      - key: EXCHANGE__KEY
+        sync: false
+      - key: EXCHANGE__SECRET
+        sync: false
+      - key: PAIR_WHITELIST
+        value: '["ETH/USD"]'
