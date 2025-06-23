@@ -1,0 +1,33 @@
+{
+  "exchange": {
+    "name": "kraken",
+    "key": "",
+    "secret": "",
+    "pair_whitelist": ["ETH/USD"],
+    "pair_blacklist": [".*"],
+    "ccxt_config": {},
+    "ccxt_async_config": {}
+  },
+  "stake_currency": "USD",
+  "stake_amount": "unlimited",
+  "dry_run": true,
+  "max_open_trades": 1,
+  "timeframe": "5m",
+  "minimal_roi": {
+    "0": 0.05,
+    "10": 0.03,
+    "30": 0
+  },
+  "stoploss": -0.10,
+  "trailing_stop": false,
+  "fiat_display_currency": "USD",
+  "enable_protections": false,
+  "strategy": "RSIStrategy",
+  "api_server": {
+    "enabled": false,
+    "listen_ip_address": "0.0.0.0",
+    "listen_port": 8080,
+    "verbosity": "error",
+    "jwt_secret_key": "CHANGE_ME"
+  }
+}
