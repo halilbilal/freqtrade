@@ -35,5 +35,10 @@
   "exit_pricing": {
     "source": "strategy",
     "fallback": "minimal_roi"
+  },
+  "entry_pricing": {
+    "price_side": "ask",
+    "use_order_book": true,
+    "fallback": "mid"
   }
 }
