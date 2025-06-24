@@ -53,9 +53,6 @@ RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
   
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
-
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
