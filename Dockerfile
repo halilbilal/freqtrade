@@ -48,9 +48,8 @@ COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.
 USER ftuser
 # Install and execute
 COPY --chown=ftuser:ftuser . /freqtrade/
-
+#  && mkdir /freqtrade/user_data/ \
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
-  && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
   
 #COPY user_data/config.json /freqtrade/user_data/config.json
