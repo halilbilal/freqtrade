@@ -54,6 +54,7 @@ RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && freqtrade install-ui
   
 COPY user_data/config.json /freqtrade/user_data/config.json
+COPY user_data/strategies  /freqtrade/user_data/strategies
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
