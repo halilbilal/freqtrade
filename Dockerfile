@@ -53,7 +53,7 @@ RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
   
-COPY user_data/config.json /freqtrade/user_data/config.json
+#COPY user_data/config.json /freqtrade/user_data/config.json
 #COPY user_data/strategies/RSIStrategy.py  /freqtrade/user_data/strategies/RSIStrategy.py
 
 ENTRYPOINT ["freqtrade"]
