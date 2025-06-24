@@ -32,6 +32,15 @@
     "username": "admin",
     "password": "admin"
   },
+  "pairlists": [
+    {
+        "method": "StaticPairList",
+        "pairs": [
+            "ETH/USDT",
+            "BTC/USDT"
+        ]
+    }
+  ],
   "exit_pricing": {
     "source": "strategy",
     "fallback": "minimal_roi"
