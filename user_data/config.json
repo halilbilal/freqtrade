@@ -24,10 +24,10 @@
   "enable_protections": false,
   "strategy": "RSIStrategy",
   "api_server": {
-    "enabled": false,
+    "enabled": true,
     "listen_ip_address": "0.0.0.0",
     "listen_port": 8080,
-    "verbosity": "error",
+    "verbosity": "info",
     "jwt_secret_key": "something_secret",
     "username": "admin",
     "password": "admin"
