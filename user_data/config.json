@@ -36,8 +36,8 @@
     {
         "method": "StaticPairList",
         "pairs": [
-            "ETH/USDT",
-            "BTC/USDT"
+            "ETH/USD",
+            "BTC/USD"
         ]
     }
   ],
