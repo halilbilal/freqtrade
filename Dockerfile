@@ -55,6 +55,10 @@ RUN pip install -e . --user --no-cache-dir --no-build-isolation \
 #COPY user_data/config.json /freqtrade/user_data/config.json
 #COPY user_data/strategies/RSIStrategy.py  /freqtrade/user_data/strategies/RSIStrategy.py
 EXPOSE 8080
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+ENTRYPOINT ["/start.sh"]
+
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
 CMD [ "trade" ]
