@@ -4,7 +4,6 @@ services:
     plan: free
     runtime: docker
     dockerfilePath: Dockerfile
-    dockerCommand: ./start.sh
     envVars:
       - key: FREQTRADE__EXCHANGE__KEY
         sync: false
@@ -15,3 +14,4 @@ services:
       - key: FREQTRADE__PAIRLIST__USE_VOLUME_FILTER
         value: "false"
     autoDeploy: true
+    
